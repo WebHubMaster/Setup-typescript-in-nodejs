@@ -8,7 +8,8 @@
 8. npm i mongoose
 9. npm i dotenv
 10. npm i cors
-11. create tsconfig.json file in root and paste these codes
+11. npm i nodemon
+12. create tsconfig.json file in root and paste these codes
 {
     "compilerOptions": {
         "target": "ES2020",
@@ -22,13 +23,17 @@
     "include": ["src"],
     "exclude": ["node_modules"]
 }
-12. go package.json and setup in scripts
-	"dev": "nodemon".
+13. go package.json and setup in scripts
+	"dev": "nodemon",
 	"build":"tsc"
-13. npm i nodemon
+14. npm i nodemon
  	create nodemon.json file in root and paste these codes
 	{
 		"watch":["src"],
 		"ext":"ts",
 		"exec":"ts-node src/index.ts"
 	}
+15. create a src folder and create all these file like
+____________________________________________________________
+src/index.ts
+src/model/user.mode.ts
